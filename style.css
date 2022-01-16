@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Baloo+Bhaijaan+2&family=Comfortaa&family=Concert+One&family=Dosis:wght@300&family=Genos:wght@300&family=Lato&family=Montserrat:wght@300&family=Pacifico&family=Permanent+Marker&family=Special+Elite&family=Voltaire&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #caa9fb;
+    background-image: url("./page-turner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Comfortaa', cursive;
+}
+
+.add-btn{
+    padding: 10px;
+    width: 150px;
+    background: rgba(107, 44, 19, 0.9);
+    border-radius: 5px;
+    margin: 0.5rem 1rem;
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    font-weight:normal;
+    font-size: 1.3rem;
+}
+
+.add-btn:hover{
+    background: rgba(148, 51, 6, 0.8);
+    font-weight:bolder;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.book{
+    padding: 20px;
+    min-width: 200px;
+    background: rgba(0, 0, 0, 0.7);
+    height: 140px;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.cross-btn{
+    width: 20px;
+    height: 20px;
+    float: right;
+    cursor: pointer;
+}
+.cr-btn{
+    width: 20px;
+    height: 20px;
+    float: right;
+    cursor: pointer;
+}
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.add-book-form{
+    width: 50vw;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 12px;
+
+}
+
+#form-top{
+    width: 50vw;
+    height: 70px;
+    background-color: rgb(26, 80, 161);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 12px;
+}
+
+
+
+.hide-modal{
+    display: none;
+}
+
+.show-modal{
+    display: flex;
+}
+
+.input-ctn{
+    width: 50vw;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    flex-direction: column;
+}
+
+.book-title{
+    width: 480px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius:5px;
+    background-color: rgba(248, 248, 248, 0.7);
+    outline: none;
+}
+
+.add-book-btn{
+    width: 120px;
+    background-color: rgb(18, 85, 129);
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    font-size:1.5rem;
+}
